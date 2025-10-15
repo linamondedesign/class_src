@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품상세설명</title>
+  <style>
+    .wrap {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+
+    .wrap > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .wrap > img {
+      object-fit: cover;
+    }
+    .wrap > img:hover + p {
+      display: block;
+    }
+    .wrap > p {
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+    }
+    .card {
+      width: 500px;
+      height: 400px;
+      background-image: url(../assets/images/img01.jpg);
+      background-size: cover;
+      padding: 2rem;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .content {
+     position: absolute;
+     bottom: 2rem;
+     left: 2rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img src="../assets/images/game.png" alt="이미지01">
+    <p>왕좌의 권위는 무겁다</p>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2>Powerwall</h2>
+      <p>정전 시에도 조명은 그대로</p>
+      <button>자세히 알아보기</button>
+    </div>
+  </div>
+</body>
+</html>

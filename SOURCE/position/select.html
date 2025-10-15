@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --color-head: #f0f;
+        --size-font: 40px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      main > p {
+        text-decoration: underline;
+        color: var(--color-head);
+        font-size: var(--size-font);
+      }
+      nav a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .layout-inline {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+      }
+      .font-bg {
+        background-color: tomato;
+      }
+      nav li:hover {
+        background-color: #ff0;
+      }
+
+      body > p:nth-child(1) {
+        background-color: #00f;
+      }
+      nav li:nth-child(2n+1) {
+        background-color: #f0f;
+      }
+      nav li:nth-child(2n) {
+        background-color: aqua;
+      }
+      nav li:nth-child(3n) {
+        background-color: aquamarine;
+      }
+
+      /* 1.3.5.7.9. */
+      /* 
+      nav li:last-child {
+        background-color: #00f;
+      } */
+      /* 
+      nav li:nth-of-type(2){
+        background-color: #ff0;
+      } */
+      /* body > p:active {
+        background-color: #00f;
+      }
+      vl */
+
+      /* nav > ul > li:nth-child(2) {
+        background-color: #f00;
+      }
+      nav > ul > li:nth-last-child(1){
+        background-color: orange;
+      } */
+
+    </style>
+  </head>
+  <body>
+    <header>제목</header>
+    <p>제목의 설명을 기재합니다.</p>
+    <nav>
+      <ul>
+        <li class="layout-inline font-bg"><a href="#">메뉴1</a></li>
+        <li class="layout-inline"><a href="#">메뉴2</a></li>
+        <li class="layout-inlin"><a href="#">메뉴3</a></li>
+        <li class="layout-inlin"><a href="#">메뉴4</a></li>
+        <li class="layout-inline"><a href="#">메뉴5</a></li>
+        <li class="layout-inlin"><a href="#">메뉴6</a></li>
+        <li class="layout-inlin"><a href="#">메뉴7</a></li>
+        <li class="layout-inlin"><a href="#">메뉴8</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>본문</h1>
+      <p>본문에 설명을 작성합니다.</p>
+      <ul>
+        <li><img src="../assets/images/game.png" alt="이미지1" /></li>
+        <li><img src="../assets/images/game-2.png" alt="이미지2" /></li>
+        <li><img src="../assets/images/game-3.png" alt="이미지3" /></li>
+      </ul>
+    </main>
+    <footer>푸터</footer>
+  </body>
+</html>

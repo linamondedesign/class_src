@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+/* class */
+.blue {
+  background-color:#3e6ae1;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+.white {
+  background-color: #fff;
+  color: #222;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+/* header 영역 시작*/
+header{
+  display: flex;
+  justify-content: space-between;
+  /* align-items:center; */
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+header > p {
+  letter-spacing: 8px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+header > nav {
+  display: flex;
+  align-items: center;
+}
+header > nav > a {
+  padding: 0.5rem 1rem; /*1rem=16px 0.5rem=8 */
+  border-radius: 0.5rem;
+}
+header > nav > a:hover {
+  background-color: #ddd;
+}
+header > ul {
+  display: flex;
+  gap:1rem;
+}
+/* header 영역 끝 */
+/* main 영역 시작 */
+main {
+  height: 70vh;
+  background-image: url(../images/main.png);
+  background-size: cover;
+  background-position: center 60%;
+  color: #fff;
+  text-align: center;
+}
+main > h1 {
+  font-size: 4rem;
+}
+main > h1, main > h2 {
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+main > a {
+  text-decoration: underline;
+}
+main > .btn-wrap  {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+main > .btn-wrap > p:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+/* main 영역 끝 */
+/* section#model영역 시작 */
+#model {
+  overflow-x: hidden;
+  padding: 4rem;
+}
+#model > .model-item {
+  width: 150vw;
+  display: flex;
+  gap: 2rem;
+}
+#model article {
+  color: #fff;
+  width: 1000px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* border: 2px solid #fff; */
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+}
+#model article:nth-child(1){
+    background-image: url(../images/img2-1.png);
+}
+#model article:nth-child(2){
+    background-image: url(../images/img3.png);
+}
+
+#model article > .bottom-text > h2 {
+  font-size: 3rem;
+}
+#model article > .bottom-text > .btn-wrap {
+  display: flex;
+  gap: 1rem;
+}
+#model > .indicator {  
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+#model > .indicator > li {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+#model > .indicator >li:first-child{
+  background-color: #222;
+}
+/* section#model영역 끝 */
+/* section#act 영역 시작 */
+#act {
+  padding: 2rem;
+  display: flex; 
+  gap: 2rem;
+}
+#act > article{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  background-color: #eee;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#act > article > div{
+  flex: 2;
+  border-right: 2px solid #000;
+  padding: 2rem;
+}
+#act > article > img{
+  flex: 1;
+  width: 30%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+}
+/* section#act 영역 끝 */
+/* section#network 영역 시작 */
+#network{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#network > .right {
+  display: flex;
+  color: #555;
+}
+#network > .right > div > p {
+  font-size: 12px;
+}
+#network > .right > div > .number {
+  display: flex;
+  font-size: 2rem;
+}
+#network > .right > div > .number > div {
+  border: 1px solid #222;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+#network > .left > .btn-wap{
+  display: flex;
+  padding-top: 2rem;
+  gap: 0.5rem;
+  color: #fff;
+}
+#network > .left > .btn-wap > p:nth-child(1) {
+  width: 200px;
+  background-color: #222;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding:  0.5rem 0;
+  color: #fff;
+}
+#network > .left > .btn-wap> p:nth-child(2) {
+  width: 200px;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #222;
+}
+#network > .right {
+  gap: 1rem;
+}
+
+#network > .right > .one >.number > div {
+  background-color: #f00;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+#network > .right > .two >.number > div {
+  background-color: #777;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+/* section#network 끝 */
+/* section#bn 시작 */
+#bn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  padding: 1rem;
+  
+}
+#bn > .bn-top {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#bn > .bn-top > .bn-text-1 {
+  background-image: url(../images/img-6.jpg);
+  background-position: 70%;
+  background-size: cover;
+  width: 900px;
+  height: 400px;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+#bn > .bn-top > .bn-text-2 {
+  background-image: url(../images/img-7.jpg);
+  background-position: 70%;
+  background-size: cover;
+  width: 900px;
+  height: 400px;
+  padding: 2rem;
+  color: #fff;
+   border-radius: 1rem;
+}
+#bn > .bn-top > .bn-text-1 > .btn-wrap > p {
+  background-color:#3e6ae1;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+#bn > .bn-top > .bn-text-2 > .btn-wrap > p {
+  background-color:#3e6ae1;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+#bn > .indicator {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+#bn > .indicator > li {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#bn > .indicator > li:first-child {
+  background-color: #222;
+}
+
+
+/* section#bn 끝 */
+
+
