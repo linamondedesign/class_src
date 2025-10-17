@@ -39,7 +39,6 @@ main{
   text-align: left;
   width: 400px;
   margin-top: 1rem;
-
 }
 
 .book-img{
@@ -58,11 +57,13 @@ main{
     transform: rotateY(30deg);
     cursor: url(../images/arow-2.png), auto;
 }
+
 .page{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
 }
+
 .page > div{
     width: 100%;
     height: 100%;
@@ -70,17 +71,21 @@ main{
     top: 0;
     left: 0;
     backface-visibility: hidden;
+
 }
 .front{
-    background-color: tomato;
+    background-image: url(../images/img-01.jpg);
+    background-size: cover;
     transform: translateZ(35px);
 }
 .back{
-    background-color: dodgerblue;
+    background-image: url(../images/img-03.jpg);
+    background-size: cover;
     transform: translateZ(-35px) rotateY(180deg);
 }
 .side{
-    background-color: yellowgreen;
+    background-image: url(../images/img-02.jpg);
+    background-size: cover;
     width: 70px;
     height: 100%;
     position: absolute;
@@ -88,3 +93,4 @@ main{
     left: -35px;
     transform: rotateY(-90deg);
 }
+

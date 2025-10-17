@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/bookstore.css" />
+    <title>BOOK STORE</title>
+  </head>
+  <body>
+    <main>
+      <div class="book-img">
+        <div class="page">
+          <div class="front"><img src="" alt="">FRONT</div>
+          <div class="back">BACK</div>
+        </div>
+        <div class="side">SIDE</div>
+      </div>
+    </main>
+    <div class="detail">
+      <h1>노르웨이의 숲</h1>
+      <p>지은이 : 무라카미 하루키</p>
+      <p>
+        <strong>"무라카미 하루키를 만나기 위해 가장 먼저 읽어야 할 책"</strong>
+      </p>
+      <p><strong> 내가 이 책을 좋아하는 이유</strong></p>
+      <p>
+        무라카미 하루키의 대표작은 세계적인 ‘하루키 붐’을 일으키며 저자의 문학적
+        성과를 널리 알린 현대 일본 문학의 대표작이다. 원문에 충실하면서도
+        현대적인 언어로 새롭게 번역한 이 책은 첫 만남을 추억하는 독자와 새로운
+        만남을 기다리는 독자 모두에게 잊지 못할 기억을 전해준다.
+      </p>
+    </div>
+
+    <script>
+      const book = document.querySelector(".book-img");
+      book.addEventListener("click", () => {
+        book.classList.toggle("flipped");
+      });
+    </script>
+  </body>
+</html>
