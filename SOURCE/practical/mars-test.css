@@ -1,0 +1,23 @@
+@charset "utf-8"
+
+
+#wrap {
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#wrap > li 
+
+#wrap > li {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+
+#wrap > li 
