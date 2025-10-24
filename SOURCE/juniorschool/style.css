@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+:root{
+    --main-color : rgb(34, 34, 34);
+}
+
+body{
+  color: var(--main-color);
+}
+
+/* header */
+
+body > header > nav{
+ display: flex;
+}
+
+
+body > header > nav > ul {
+ display: flex;
+}
+
+body > header > nav > .logo, .menu-icon {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100vh;
+
+}
+
+
+
+body > header > nav > .logo > img {
+  width: 78px;
+  height: 31px;
+  
+}
+
+body > header > nav > .gnb, .kakaoimpact {
+
+  visibility : hidden
+}
+
+body > header > nav > .kakaoimpact {
+  width: 144px;
+  height: 34px;
+  background-color: #ffcd00;
+  border-radius: 50px;
+  text-align: center;
+}
+
+
+

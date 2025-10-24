@@ -1,0 +1,10 @@
+@charset "utf-8";
+$main-color :#f00;
+
+body {
+  background-color: #ddd;
+}
+
+h1 {
+  color:$main-color
+}
