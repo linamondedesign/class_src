@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+
+/* class */
+
+.blue {
+  background-color: #3E6AE1;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+
+.white {
+  background-color: #fff;
+  color: #222;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+
+
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+
+.indicator > li {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.indicator > li:first-child(1) {
+  background-color: #222;
+}
+
+
+/* header 영역 시작 */
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem 0;
+ }
+
+ header > P {
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 8px;
+ }
+ 
+ header > nav {
+  display: flex;
+  align-items: center;
+ }
+
+header > nav > a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+header > nav > a:hover {
+  background-color: #222;
+}
+
+ header > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* main 영역 시작 */
+
+
+main {
+  height: 70vh;
+  background-color: aquamarine;
+  background-size: cover;
+  background-position: center 60%;
+  text-align: center;
+  color: blue;
+}
+
+main > h1 {
+  font-size: 4rem;
+}
+
+main > h1, main > h2 {
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+main > a {
+  text-decoration: underline;
+}
+
+main > .btn-wrap {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main > .btn-wrap > p:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+/* main 영역 끝 */
+
+/* section#mondel 영역 시작 */
+
+#model {
+  overflow: hidden;
+  padding: 2rem;
+}
+
+#model article {
+  color: #fff;
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+}
+
+#model article:nth-child(1) {
+  background-image: url(../images/imgi_2.png);
+}
+
+#model article:nth-child(2) {
+  background-image: url(../images/imgi_3.png);
+}
+
+#mondel article > .bottom-text > h2 {
+  font-size: 3rem;
+}
+
+#model article > .bottom-text > .btn-wrap {
+  display: flex;
+  grid-area: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
