@@ -21,11 +21,14 @@
 // 
 */
 
+<<<<<<< HEAD
  // 
 
 
 
 
+=======
+>>>>>>> f9f923096ca493d49617915f87c73f38bbdde156
 let userName; //변수선언
 console.log(userName);   //undefined
 userName = '홍길동'; //대입연산자
