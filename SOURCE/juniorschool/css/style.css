@@ -6,8 +6,6 @@
 
 body{
   color: var(--main-color);
-  margin: 0;
-  padding: 0;
   font-family: 'Pretendard';
   font-weight: 500;
 }
@@ -33,8 +31,7 @@ body{
   display: flex;
   justify-content: center;
 }
-
-
+      
 /* header 영역 시작*/
 
 /*nav 시작 영역*/
