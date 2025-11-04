@@ -4,6 +4,12 @@
     --main-color : rgb(34, 34, 34);
 }
 
+@media all and (max-width:1440px) {
+  html {
+    max-width: 1440px;
+  }
+}
+
 body{
   color: var(--main-color);
   font-family: 'Pretendard';
@@ -17,6 +23,7 @@ body{
   padding: 1rem 3rem;
   font-size: 1rem;
   width: 100%;
+  text-align: center;
 }
 .clear {
   border: 1px solid #222;
@@ -30,6 +37,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
       
 /* header 영역 시작*/
@@ -48,6 +56,35 @@ header > nav {
  justify-content: space-between;
  /* background-color: #fff; */
 }
+
+header > nav > .menu-pc {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+header > nav > .menu-pc >li {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 700;
+}
+header > nav > .menu-y {
+  gap: 1rem;
+}
+header > nav > .menu-y > .btn-yellow {
+ background-color: #ffcd00;
+ text-align: center;
+ border-radius: 2rem;
+ width: 144px;
+ height: 34px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+header > nav > .menu-y > .btn-yellow > span {
+  font-weight: 800;
+}
+
+
 header > nav > div > img {
   width: 78px;
   height: 31px;
@@ -60,27 +97,53 @@ header > nav > ul > li {
   /* background-color: aquamarine; */
   font-size: 1.5rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@media all and (max-width:960px){
+  header {
+
+  }
+
+}
+
+
+
+
+
+
 
 /* .main-banner 영역 시작*/
 header > .main-banner {  
   width: 100%;
   border-radius: 2rem;
   background-color: #F6F6CD;
-  padding: 3rem;  
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 header > .main-banner > p:nth-of-type(1) {
   font-size: 1.6rem; 
   font-weight: 700;
+  text-align: center;
+   ,t
 }
 header > .main-banner>p:nth-of-type(2) {
   margin-top: 1rem;
   font-size: 1.1rem; 
   font-weight: 600; 
+  text-align: center;
 }
 header > .main-banner > img {
   width: 300px;
-  height: 300px; 
+  height: 300px;
+  display: flex;
+  justify-content: center;
 }
 header > .main-banner div {
   display: flex;
